@@ -1,0 +1,18 @@
+[
+{
+  "modid": "Emerald",
+  "name": "Emerald",
+  "description": "Adds items consisting of emerald!",
+  "version": "1.0",
+  "credits": "Created by BJ98BJ",
+  "logoFile": "",
+  "mcversion": "",
+  "url": "",
+  "updateUrl": "",
+  "authors": [ "Bj98BJ"],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": [
+	 ]
+}
+]
