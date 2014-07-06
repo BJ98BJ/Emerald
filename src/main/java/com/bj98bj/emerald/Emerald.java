@@ -1,5 +1,6 @@
 package com.bj98bj.emerald;
 
+import com.bj98bj.emerald.init.ModItems;
 import com.bj98bj.emerald.proxy.IProxy;
 import com.bj98bj.emerald.reference.Reference;
 import com.bj98bj.emerald.configuration.ConfigurationHandler;
@@ -30,6 +31,7 @@ public class Emerald
 
         System.out.println(event.getSuggestedConfigurationFile());
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        ModItems.init();
 
     }
 
