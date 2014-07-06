@@ -2,6 +2,8 @@ package com.bj98bj.emerald;
 
 import com.bj98bj.emerald.proxy.IProxy;
 import com.bj98bj.emerald.reference.Reference;
+import com.bj98bj.emerald.configuration.ConfigurationHandler;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -16,14 +18,18 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public class Emerald
 {
-    @SidedProxy(clientSide = "com.bj98bj.emerald.proxy.ClientProxy", serverSide = "com.bj98bj.emerald.proxy.ServerProxy")
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
 
     @Mod.Instance(Reference.MOD_ID)
     public static Emerald instance;
 
+    @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+
+        System.out.println(event.getSuggestedConfigurationFile());
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 
     }
 
@@ -36,6 +42,6 @@ public class Emerald
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-
+        //FMLLog.log(Reference.MOD_NAME, Level.INFO, "Emerald mod by BJ98BJ completed initialization!!!");
     }
 }
