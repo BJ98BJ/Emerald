@@ -1,6 +1,7 @@
 package com.bj98bj.emerald.init;
 
 import com.bj98bj.emerald.item.ItemEmerald;
+import com.bj98bj.emerald.item.ItemEmeraldChestplate;
 import com.bj98bj.emerald.item.ItemEmeraldSword;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -9,9 +10,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
  */
 public class ModItems {
     public static final ItemEmerald emeraldsword = new ItemEmeraldSword();
+    public static final ItemEmerald emeraldchestplate = new ItemEmeraldChestplate();
 
     public static void init()
     {
         GameRegistry.registerItem(emeraldsword, "emeraldSword");
+        GameRegistry.registerItem(emeraldchestplate, "emeraldChestplate");
     }
 }

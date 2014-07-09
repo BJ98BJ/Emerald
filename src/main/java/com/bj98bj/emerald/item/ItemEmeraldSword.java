@@ -8,5 +8,7 @@ public class ItemEmeraldSword extends  ItemEmerald {
     public ItemEmeraldSword() {
         super();
         this.setUnlocalizedName("emeraldSword");
+        setMaxStackSize(1);
+        setMaxDamage(100);
     }
 }
