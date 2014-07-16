@@ -1,5 +1,6 @@
 package com.bj98bj.emerald;
 
+import com.bj98bj.emerald.init.ModBlocks;
 import com.bj98bj.emerald.init.ModItems;
 import com.bj98bj.emerald.init.Recipes;
 import com.bj98bj.emerald.proxy.IProxy;
@@ -34,7 +35,7 @@ public class Emerald
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         ModItems.init();
         Recipes.init();
-
+        ModBlocks.init();
     }
 
     @Mod.EventHandler

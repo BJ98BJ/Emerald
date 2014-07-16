@@ -1,5 +1,6 @@
 package com.bj98bj.emerald.item;
 
+import com.bj98bj.emerald.creativeTab.CreativeTabEmerald;
 import com.bj98bj.emerald.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -13,8 +14,7 @@ public class ItemEmeraldSword extends  ItemEmerald {
         super();
         this.setUnlocalizedName("emeraldSword");
         this.setMaxStackSize(1);
-        this.setMaxDamage(100);
-        this.setCreativeTab(CreativeTabs.tabCombat);
-        this.setDamage(new ItemStack(ModItems.emeraldsword, 1),5);
+        this.setMaxDamage(1000);
+        //this.setDamage(new ItemStack(ModItems.emeraldsword, 1),5);
     }
 }

@@ -1,5 +1,6 @@
 package com.bj98bj.emerald.item;
 
+import com.bj98bj.emerald.creativeTab.CreativeTabEmerald;
 import com.bj98bj.emerald.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -14,7 +15,10 @@ import java.sql.Ref;
  */
 public class ItemEmerald extends Item {
     public  ItemEmerald() {
+
         super();
+
+        this.setCreativeTab(CreativeTabEmerald.EMERALD_TAB);
     }
 
 
